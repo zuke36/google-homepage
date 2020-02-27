@@ -3,40 +3,40 @@
     <head>
        <title>Google</title>
        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-       <link href="/stylesheet.css">
+       <link rel="stylesheet" type="text/css" href="/stylesheet.css">
     </head>
     <body>
         <header>
        <nav>
-           <ul>
-               <li>About</li>
-               <li>Store</li>
-               <li>Gmail</li>
-               <li>Images</li>
+           <ul id="nav_bar">
+             <li> <a href="#">About</a></li>
+               <li><a href="#">Store</a></li>
+             <li class="nav_float"><img src="https://randomuser.me/api/portraits/men/32.jpg">
+             <li class="nav_float"><a href="#">Images</a></li> 
+             <li class="nav_float"><a href="#">Gmail</a></li>
            </ul>
        </nav>
     </header>
-        <div>
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        <div class="google">
+            <img id="google_img" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
         </div>
-        <div>
-            <form>
-                <input type="text">
-            </form>
-        </div>
-        <div>
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
+        <div class="google-search">
+          <img class="voice" src="http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+                <input id="search" type="text">
+              </div>
+        <div class="buttons">
+            <input class="butt" type="submit" value="Google Search">
+            <input class="butt" type="submit" value="I'm Feeling Lucky">
         </div>
         <footer>
             <nav>
-                <ul>
-                    <li>Advertising</li>
-                    <li>Business</li>
-                    <li>How Search works</li>
-                    <li>Privacy</li>
-                    <li>Terms</li>
-                    <li>Settings</li>
+                <ul id="footer-left">
+                  <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                               <li class="footer_float"><a href="#">Settings</a></li>
+                <li class="footer_float"><a href="#">Terms</a></li>
+              <li class="footer_float"><a href="#">Privacy</a></li>
                 </ul>
             </nav>
         </footer>
